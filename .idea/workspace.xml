@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="673ea35a-d54f-4938-adf8-1db11c5e5fa3" name="更改" comment="feat(game): 添加游戏地图模块并重构地图配置&#10;&#10;- 新增 GameMap 类统一管理地图区域定义、边界和坐标转换&#10;- 在 config.py 中添加游戏区域坐标和尺寸配置参数&#10;- 将地图砖块大小从 30 调整为 75，并新增行列数配置&#10;- 移除原有的基于屏幕宽高的动态地图尺寸计算&#10;- 在游戏场景中集成地图模块并实现调试渲染功能">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EatFans&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:EatFans/Python-Study.git&quot;,
+    &quot;accountId&quot;: &quot;eccc59dd-4cd3-4afe-a7fe-19e2e4267a33&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3HtjuGxU9IsPNRxMTJrUiHJXO4P" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/fanzijian/PersonalProject/PyGame-Snake&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/game/entity" />
+      <recent name="$PROJECT_DIR$/game/scene" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="study1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (study1)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.27397.106" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="673ea35a-d54f-4938-adf8-1db11c5e5fa3" name="更改" comment="" />
+      <created>1786694479440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786694479440</updated>
+      <workItem from="1786800449593" duration="21000" />
+      <workItem from="1786800486612" duration="28323000" />
+      <workItem from="1787024010436" duration="1856000" />
+      <workItem from="1787477549749" duration="2646000" />
+      <workItem from="1787492330869" duration="16000" />
+      <workItem from="1787492348311" duration="146000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: 游戏全局配置">
+      <option name="closed" value="true" />
+      <created>1786767326824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1786767326824</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 场景管理器及主菜单场景">
+      <option name="closed" value="true" />
+      <created>1786774217247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1786774217248</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 场景管理器及主菜单场景">
+      <option name="closed" value="true" />
+      <created>1786774498490</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786774498490</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: 开始完善游戏UI部分设计开发">
+      <option name="closed" value="true" />
+      <created>1786774796871</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1786774796871</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: 完善场景、UI、音频基础功能">
+      <option name="closed" value="true" />
+      <created>1786779826928</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1786779826928</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(game): 添加日志系统并优化游戏初始化流程&#10;&#10;- 集成全局Logger工具类，支持DEBUG、INFO、WARNING、ERROR级别的日志输出&#10;- 在GameApplication初始化过程中添加关键步骤的日志记录&#10;- 为游戏配置文件添加代码注释以提高可读性&#10;- 移除游戏标题UI中的调试打印语句&#10;- 删除不再使用的玩家相关代码文件">
+      <option name="closed" value="true" />
+      <created>1786800623922</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1786800623922</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(utils): 添加全局日志工具类并集成到游戏各个模块&#10;&#10;- 创建了 Logger 日志工具类，支持 DEBUG、INFO、WARNING、ERROR 四种日志级别&#10;- 在 GameBackGroundUI、GameTitleUI、MainMenuScene、GameApplication 中添加日志记录功能&#10;- 为游戏背景图、标题、主菜单场景、游戏程序初始化过程添加详细的状态日志&#10;- 为游戏窗口创建、音频管理器初始化、场景切换等关键节点添加日志输出&#10;- 移除了已废弃的 game/player.py 文件&#10;- 为游戏配置文件添加了配置项注释说明">
+      <option name="closed" value="true" />
+      <created>1786800928858</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1786800928858</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat(game): 添加游戏场景和开始菜单UI基础结构&#10;&#10;- 在application.py中预留开发者工具调试处理位置&#10;- 创建GameScene类实现基本场景功能包括初始化、事件处理、更新和渲染&#10;- 创建GameStartMenuUI类实现游戏开始菜单界面基础结构&#10;- 集成日志记录功能到游戏场景初始化过程中">
+      <option name="closed" value="true" />
+      <created>1786802047908</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1786802047908</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(game): 添加游戏按钮UI组件&#10;&#10;- 创建GameButton类继承自UI基类&#10;- 实现按钮状态管理（未按下和按下状态）&#10;- 添加初始化、事件处理、更新和渲染方法&#10;- 设置按钮图层为10&#10;- 实现销毁方法用于资源清理">
+      <option name="closed" value="true" />
+      <created>1786802773395</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1786802773395</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat(game): 实现游戏按钮交互和场景管理功能&#10;&#10;- 在MainMenuScene中传递scene_manager参数给GameButton&#10;- 添加场景切换处理逻辑到游戏主循环中&#10;- 重构GameButton实现完整的鼠标交互状态管理&#10;- 实现按钮的渲染、事件处理和状态切换功能&#10;- 添加GameStartMenuUI实现开始和退出游戏按钮&#10;- 实现场景管理器的延迟切换机制避免冲突&#10;- 优化UI管理器事件传播顺序和处理流程&#10;- 修复场景销毁时">
+      <option name="closed" value="true" />
+      <created>1786810839739</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1786810839739</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat(game): 添加游戏场景背景UI并调整地图砖块大小&#10;&#10;- 将地图砖块大小从20调整为30&#10;- 新增GameAreaBackgroundUI类用于渲染游戏区域背景&#10;- 在游戏场景中注册背景UI组件&#10;- 完善游戏场景的事件处理、更新和渲染逻辑&#10;- 移除主菜单场景中的空初始化代码&#10;- 添加背景图片加载和缩放功能">
+      <option name="closed" value="true" />
+      <created>1786867519153</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1786867519153</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat(game): 添加游戏地图模块并重构地图配置&#10;&#10;- 新增 GameMap 类统一管理地图区域定义、边界和坐标转换&#10;- 在 config.py 中添加游戏区域坐标和尺寸配置参数&#10;- 将地图砖块大小从 30 调整为 75，并新增行列数配置&#10;- 移除原有的">
+      <option name="closed" value="true" />
+      <created>1786871085072</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1786871085072</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 游戏全局配置" />
+    <MESSAGE value="feat: 场景管理器及主菜单场景" />
+    <MESSAGE value="feat: 开始完善游戏UI部分设计开发" />
+    <MESSAGE value="feat: 完善场景、UI、音频基础功能" />
+    <MESSAGE value="feat(game): 添加日志系统并优化游戏初始化流程&#10;&#10;- 集成全局Logger工具类，支持DEBUG、INFO、WARNING、ERROR级别的日志输出&#10;- 在GameApplication初始化过程中添加关键步骤的日志记录&#10;- 为游戏配置文件添加代码注释以提高可读性&#10;- 移除游戏标题UI中的调试打印语句&#10;- 删除不再使用的玩家相关代码文件" />
+    <MESSAGE value="feat(utils): 添加全局日志工具类并集成到游戏各个模块&#10;&#10;- 创建了 Logger 日志工具类，支持 DEBUG、INFO、WARNING、ERROR 四种日志级别&#10;- 在 GameBackGroundUI、GameTitleUI、MainMenuScene、GameApplication 中添加日志记录功能&#10;- 为游戏背景图、标题、主菜单场景、游戏程序初始化过程添加详细的状态日志&#10;- 为游戏窗口创建、音频管理器初始化、场景切换等关键节点添加日志输出&#10;- 移除了已废弃的 game/player.py 文件&#10;- 为游戏配置文件添加了配置项注释说明" />
+    <MESSAGE value="feat(game): 添加游戏场景和开始菜单UI基础结构&#10;&#10;- 在application.py中预留开发者工具调试处理位置&#10;- 创建GameScene类实现基本场景功能包括初始化、事件处理、更新和渲染&#10;- 创建GameStartMenuUI类实现游戏开始菜单界面基础结构&#10;- 集成日志记录功能到游戏场景初始化过程中" />
+    <MESSAGE value="feat(game): 添加游戏按钮UI组件&#10;&#10;- 创建GameButton类继承自UI基类&#10;- 实现按钮状态管理（未按下和按下状态）&#10;- 添加初始化、事件处理、更新和渲染方法&#10;- 设置按钮图层为10&#10;- 实现销毁方法用于资源清理" />
+    <MESSAGE value="feat(game): 实现游戏按钮交互和场景管理功能&#10;&#10;- 在MainMenuScene中传递scene_manager参数给GameButton&#10;- 添加场景切换处理逻辑到游戏主循环中&#10;- 重构GameButton实现完整的鼠标交互状态管理&#10;- 实现按钮的渲染、事件处理和状态切换功能&#10;- 添加GameStartMenuUI实现开始和退出游戏按钮&#10;- 实现场景管理器的延迟切换机制避免冲突&#10;- 优化UI管理器事件传播顺序和处理流程&#10;-" />
+    <MESSAGE value="feat(game): 添加游戏场景背景UI并调整地图砖块大小&#10;&#10;- 将地图砖块大小从20调整为30&#10;- 新增GameAreaBackgroundUI类用于渲染游戏区域背景&#10;- 在游戏场景中注册背景UI组件&#10;- 完善游戏场景的事件处理、更新和渲染逻辑&#10;- 移除主菜单场景中的空" />
+    <MESSAGE value="feat(game): 添加游戏地图模块并重构地图配置&#10;&#10;- 新增 GameMap 类统一管理地图区域定义、边界和坐标转换&#10;- 在 config.py 中添加游戏区域坐标和尺寸配置参数&#10;- 将地图砖块大小从 30 调整为 75，并新增行列数配置&#10;- 移除原有的" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(game): 添加游戏地图模块并重构地图配置&#10;&#10;- 新增 GameMap 类统一管理地图区域定义、边界和坐标转换&#10;- 在 config.py 中添加游戏区域坐标和尺寸配置参数&#10;- 将地图砖块大小从 30 调整为 75，并新增行列数配置&#10;- 移除原有的" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/study1$main.coverage" NAME="main 覆盖结果" MODIFIED="1787491043438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
