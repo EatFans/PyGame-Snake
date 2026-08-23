@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="673ea35a-d54f-4938-adf8-1db11c5e5fa3" name="更改" comment="feat(game): 添加游戏地图模块并重构地图配置&#10;&#10;- 新增 GameMap 类统一管理地图区域定义、边界和坐标转换&#10;- 在 config.py 中添加游戏区域坐标和尺寸配置参数&#10;- 将地图砖块大小从 30 调整为 75，并新增行列数配置&#10;- 移除原有的基于屏幕宽高的动态地图尺寸计算&#10;- 在游戏场景中集成地图模块并实现调试渲染功能">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="673ea35a-d54f-4938-adf8-1db11c5e5fa3" name="更改" comment="feat(game): 初始化贪吃蛇游戏项目框架&#10;&#10;- 创建游戏主程序 GameApplication，负责游戏生命周期管理&#10;- 实现音频管理器 AudioManager，支持背景音乐和音效播放&#10;- 添加游戏配置类 GameConfig，统一管理窗口、区域、颜色等参数&#10;- 实现场景基类 Scene 和场景管理器 SceneManager，支持场景切换&#10;- 创建 UI 基类和 UI 管理器，实现分层渲染和事件处理&#10;- 实现游戏按钮、背景、标题等基础 UI 组件&#10;- 创建主菜单场景和游戏场景，实现开始游戏和退出功能&#10;- 添加全局日志工具 Logger，便于开发调试&#10;- 创建游戏地图模块 GameMap，管理游戏区域和网格坐标&#10;- 添加 README.md 项目说明文档">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +29,12 @@
     &quot;assignee&quot;: &quot;EatFans&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:EatFans/Python-Study.git&quot;,
-    &quot;accountId&quot;: &quot;eccc59dd-4cd3-4afe-a7fe-19e2e4267a33&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:EatFans/PyGame-Snake.git",
+    "accountId": "eccc59dd-4cd3-4afe-a7fe-19e2e4267a33"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -112,7 +113,7 @@
       <workItem from="1787024010436" duration="1856000" />
       <workItem from="1787477549749" duration="2646000" />
       <workItem from="1787492330869" duration="16000" />
-      <workItem from="1787492348311" duration="146000" />
+      <workItem from="1787492348311" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 游戏全局配置">
       <option name="closed" value="true" />
@@ -210,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786871085072</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat(game): 初始化贪吃蛇游戏项目框架&#10;&#10;- 创建游戏主程序 GameApplication，负责游戏生命周期管理&#10;- 实现音频管理器 AudioManager，支持背景音乐和音效播放&#10;- 添加游戏配置类 GameConfig，统一管理窗口、区域、颜色等参数&#10;- 实现场景基类 Scene 和场景管理器 SceneManager，支持场景切换&#10;- 创建 UI 基类和 UI 管理器，实现分层渲染和事件处理&#10;- 实现游戏按钮、背景、标题等基础 UI 组件&#10;- 创建主菜单场景和游戏场景，实现开始游戏和退出功能&#10;- 添加全局日志工具 Logger，便于开发调试&#10;- 创建游戏地图模块 GameMap，管理游戏区域和网格坐标&#10;- 添加 README.md 项目说明文档">
+      <option name="closed" value="true" />
+      <created>1787492509401</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1787492509401</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +237,8 @@
     <MESSAGE value="feat(game): 实现游戏按钮交互和场景管理功能&#10;&#10;- 在MainMenuScene中传递scene_manager参数给GameButton&#10;- 添加场景切换处理逻辑到游戏主循环中&#10;- 重构GameButton实现完整的鼠标交互状态管理&#10;- 实现按钮的渲染、事件处理和状态切换功能&#10;- 添加GameStartMenuUI实现开始和退出游戏按钮&#10;- 实现场景管理器的延迟切换机制避免冲突&#10;- 优化UI管理器事件传播顺序和处理流程&#10;-" />
     <MESSAGE value="feat(game): 添加游戏场景背景UI并调整地图砖块大小&#10;&#10;- 将地图砖块大小从20调整为30&#10;- 新增GameAreaBackgroundUI类用于渲染游戏区域背景&#10;- 在游戏场景中注册背景UI组件&#10;- 完善游戏场景的事件处理、更新和渲染逻辑&#10;- 移除主菜单场景中的空" />
     <MESSAGE value="feat(game): 添加游戏地图模块并重构地图配置&#10;&#10;- 新增 GameMap 类统一管理地图区域定义、边界和坐标转换&#10;- 在 config.py 中添加游戏区域坐标和尺寸配置参数&#10;- 将地图砖块大小从 30 调整为 75，并新增行列数配置&#10;- 移除原有的" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(game): 添加游戏地图模块并重构地图配置&#10;&#10;- 新增 GameMap 类统一管理地图区域定义、边界和坐标转换&#10;- 在 config.py 中添加游戏区域坐标和尺寸配置参数&#10;- 将地图砖块大小从 30 调整为 75，并新增行列数配置&#10;- 移除原有的" />
+    <MESSAGE value="feat(game): 初始化贪吃蛇游戏项目框架&#10;&#10;- 创建游戏主程序 GameApplication，负责游戏生命周期管理&#10;- 实现音频管理器 AudioManager，支持背景音乐和音效播放&#10;- 添加游戏配置类 GameConfig，统一管理窗口、区域、颜色等参数&#10;- 实现场景基类 Scene 和场景管理器 SceneManager，支持场景切换&#10;- 创建 UI 基类和 UI 管理器，实现分层渲染和事件处理&#10;- 实现游戏按钮、背景、标题等基础 UI 组件&#10;- 创建主菜单场景和游戏场景，实现开始游戏和退出功能&#10;- 添加全局日志工具 Logger，便于开发调试&#10;- 创建游戏地图模块 GameMap，管理游戏区域和网格坐标&#10;- 添加 README.md 项目说明文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(game): 初始化贪吃蛇游戏项目框架&#10;&#10;- 创建游戏主程序 GameApplication，负责游戏生命周期管理&#10;- 实现音频管理器 AudioManager，支持背景音乐和音效播放&#10;- 添加游戏配置类 GameConfig，统一管理窗口、区域、颜色等参数&#10;- 实现场景基类 Scene 和场景管理器 SceneManager，支持场景切换&#10;- 创建 UI 基类和 UI 管理器，实现分层渲染和事件处理&#10;- 实现游戏按钮、背景、标题等基础 UI 组件&#10;- 创建主菜单场景和游戏场景，实现开始游戏和退出功能&#10;- 添加全局日志工具 Logger，便于开发调试&#10;- 创建游戏地图模块 GameMap，管理游戏区域和网格坐标&#10;- 添加 README.md 项目说明文档" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/study1$main.coverage" NAME="main 覆盖结果" MODIFIED="1787491043438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
